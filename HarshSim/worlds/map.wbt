@@ -1,0 +1,33 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/UnevenTerrain.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+IMPORTABLE EXTERNPROTO "../protos/Pioneer3DistanceSensor.proto"
+IMPORTABLE EXTERNPROTO "../protos/Pioneer3at_custom.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.4214773144011912 -0.42095187483236574 -0.8032162800393651 4.493766059986077
+  position 8.548249020565382 -8.541318653012269 25.580594951769314
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+Robot {
+  children [
+    Receiver {
+      channel 2
+    }
+  ]
+  controller "supervisor_controller"
+  supervisor TRUE
+}
+UnevenTerrain {
+  size 50 50 0
+}

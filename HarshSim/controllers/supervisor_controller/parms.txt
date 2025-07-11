@@ -1,0 +1,11 @@
+# RL Configuration File
+rl_method: N/A
+
+# RL Parameters
+
+# Terrain Percentages
+Debris: 0.0
+Water: 0.0
+Fire: 0.0
+Unknown: 0.0
+Wall: 0.01
