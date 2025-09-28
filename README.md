@@ -3,7 +3,7 @@
 
 > **Webots‑based simulator + Gymnasium environment** for training and evaluating DRL navigation policies (PPO / Recurrent PPO) in adverse terrains (debris, water, fire, walls, unknown). Includes a **Tkinter GUI** to build maps and configure experiments, a **Supervisor** that spawns the scene (robot + optional moving human target), and a **robot controller** that exposes a `Gymnasium` API with a costmap encoder.
 
-![Goal pin](HarshSim/controllers/supervisor_controller/SIMUI.png)
+![SIMUI](SIMUI.png)
 
 ---
 
